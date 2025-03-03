@@ -1,0 +1,77 @@
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data base Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0f0202;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background-color: #faf8f8;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 0px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #110f0f;
+            border-radius: 9px;
+        }
+    
+        button {
+        
+            background-color: #3c17c2;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+          
+        }
+         .button-container {
+            display: flex;
+            justify-content: center;
+        } 
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <div class="form-group">
+                <label>Category:</label>
+                    <input type="text" id="category"  placeholder="enter your Gender" >
+                </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="enter your email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required  placeholder="enter your password">
+            </div>
+            
+            <div  class="button-container">
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+<script type ="module" src="database.js"></script>
+</html>
+
